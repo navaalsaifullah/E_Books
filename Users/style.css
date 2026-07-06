@@ -1,0 +1,313 @@
+*:not(nav):not(nav *):not(footer):not(footer *) {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+}
+
+body{
+    background-color: #ffffff;
+}
+
+/* Book Card Styles */
+.book-card {
+    background: #fff;
+    border: 1px solid #d9f3d3;
+    border-top: 5px solid #99d98c;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: .3s;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .05);
+}
+
+.book-card:hover {
+    border-color: #99d98c;
+    transform: translateY(-6px);
+    box-shadow: 0 15px 35px rgba(153, 217, 140, .20);
+}
+
+.hero-section{
+    background:#99d98c;
+    min-height:500px;
+    margin-top:50px;
+    border-radius:15px;
+    box-shadow:0 5px 20px rgba(0,0,0,0.1);
+}
+.book-card{
+    transition:0.4s;
+    border:none;
+    box-shadow:0 0 15px rgba(0,0,0,0.1);
+}
+
+.book-card:hover{
+    transform:translateY(-10px);
+}
+
+.winner-box,
+.feature-box{
+    background:#fff;
+    padding:25px;
+    border-radius:12px;
+    box-shadow:0 0 15px rgba(0,0,0,0.1);
+}
+
+.btn-primary{
+    background:#99d98c;
+    border:none;
+}
+
+.btn-primary:hover{
+    background:#99d98c;
+}
+
+.about-section{
+    background-color:#ffffff;
+}
+
+.about-heading{
+    color:#99d98c;
+    font-size:45px;
+    font-weight:bold;
+    margin-bottom:20px;
+}
+
+.about-text{
+    color:#555;
+    font-size:18px;
+    line-height:30px;
+}
+
+.about-btn{
+    background-color:#99d98c;
+    color:white;
+    padding:12px 28px;
+    margin-top:15px;
+    border:none;
+}
+
+.about-btn:hover{
+    background-color:#99d98c;
+    color:white;
+}
+.book-card{
+    transition:0.3s;
+}
+
+.book-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 10px 20px rgba(0,0,0,0.2);
+}
+
+
+.book-card{
+    max-width:350px;
+    margin:auto;
+}
+
+.book-card:hover{
+    transform: translateY(-8px);
+    box-shadow: 0 8px 25px rgba(177,107,209,0.25);
+}
+
+.book-card img{
+    width:100%;
+    height:220px !important;
+    object-fit:cover;
+}
+
+.book-card .card-body{
+    padding: 20px;
+    padding: 20px;
+    min-height: 140px;
+}
+
+.book-card h5{
+    font-size: 24px;
+    font-weight: 700;
+    color: #222;
+    margin-bottom: 10px;
+}
+
+.book-card p{
+    font-size: 15px;
+    color: #666;
+    line-height: 1.6;
+}
+
+.contact-heading{
+    color:#99d98c;
+    font-size:50px;
+    font-weight:bold;
+}
+
+.contact-form .form-control{
+    padding:12px;
+    border:1px solid #ccc;
+}
+
+.contact-form .form-control:focus{
+    box-shadow:none;
+    border-color:#99d98c;
+}
+
+.contact-btn{
+    background-color:#99d98c;
+    color:white;
+    padding:12px 30px;
+    border:none;
+}
+
+.contact-btn:hover{
+    background-color:#99d98c;
+    color:white;
+}
+.btn{
+    background: #99d98c;
+    color: white;
+    border-radius: 8px;
+    padding: 8px 18px;
+}
+
+.btn:hover{
+    background: #99d98c;
+    color: white;
+}
+/* Custom Stats Dashboard Styling */
+
+/* Card Styling with a subtle shadow and hover animation */
+.card-stat {
+    border-radius: 16px;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.02);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-stat:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+}
+
+/* Icon Container - Circular wrapper with soft background colors */
+.stat-icon-wrap {
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+    background-color: #f8f9fa; /* Default soft gray background */
+    color: #99d98c; /* Modern Indigo for the icons */
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Optional: Different colors for each specific card icon on hover */
+.col-6:nth-child(1) .card-stat:hover .stat-icon-wrap {
+ background-color: #99d98c;
+    color: #ffffff;
+}
+.col-6:nth-child(2) .card-stat:hover .stat-icon-wrap {
+    background-color: #99d98c;
+    color: #ffffff;
+}
+.col-6:nth-child(3) .card-stat:hover .stat-icon-wrap {
+  background-color: #99d98c;
+    color: #ffffff;
+}
+.col-6:nth-child(4) .card-stat:hover .stat-icon-wrap {
+  background-color: #99d98c;
+    color: #ffffff;
+}
+
+/* Custom Utilities used in your HTML */
+.text-xl {
+    font-size: 1.5rem;
+}
+
+.tracking-tight {
+    letter-spacing: -0.025em;
+}
+
+.tracking-wider {
+    letter-spacing: 0.05em;
+}
+
+/* Responsive adjust for mobile */
+@media (max-width: 576px) {
+    .card-stat {
+        padding: 1.25rem !important;
+    }
+    .stat-icon-wrap {
+        width: 50px;
+        height: 50px;
+    }
+    .text-xl {
+        font-size: 1.25rem;
+    }
+}
+
+/* Custom Global Utility for Elements styling */
+.custom-btn {
+    background-color: #99d98c;
+    border: 2px solid #99d98c;
+    transition: all 0.3s ease;
+}
+.custom-btn:hover {
+    background-color: #76c86b;
+    border-color: #76c86b;
+    transform: translateY(-2px);
+}
+
+/* Search Bar Formatting Customizations */
+.search-box-custom {
+    border: 1px solid rgba(0, 0, 0, 0.08);
+}
+.custom-input, .custom-select {
+    border: 1px solid #dee2e6;
+    border-radius: 10px !important;
+    transition: all 0.25s ease-in-out;
+}
+.custom-input:focus, .custom-select:focus {
+    border-color: #99d98c;
+    box-shadow: 0 0 0 0.25rem rgba(153, 217, 140, 0.25);
+}
+@media (min-width: 768px) {
+    .min-w-md-200 {
+        min-width: 220px;
+    }
+}
+
+/* Book Grid Cards Interface Design */
+.book-card {
+    border-radius: 16px;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.3s ease;
+}
+.book-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12) !important;
+}
+
+/* Image Animations Container */
+.img-hover-container {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+.book-image {
+    transition: transform 0.5s ease;
+}
+.book-card:hover .book-image {
+    transform: scale(1.06);
+}
+
+/* Small Component Styling changes */
+.badge-category {
+    background: #99d98c;
+    font-size: 0.72rem;
+    letter-spacing: 0.03em;
+    box-shadow: 0 2px 8px rgba(153, 217, 140, 0.4);
+}
+.text-truncate-2 {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;  
+    overflow: hidden;
+    height: 2.8rem; /* Keeps titles aligned perfectly uniform */
+    line-height: 1.4rem;
+}

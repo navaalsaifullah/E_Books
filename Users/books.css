@@ -1,0 +1,289 @@
+/* RESET - scoped to books content only, not site header/footer */
+.books-page .hero,
+.books-page .myContainer,
+.books-page .books,
+.books-page .search-box,
+.books-page .input-box {
+    box-sizing: border-box;
+}
+
+.books-page .hero *,
+.books-page .myContainer *,
+.books-page .books * {
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* BODY */
+body {
+    background: #f6f7fb;
+    color: #222;
+}
+
+/* HERO */
+.hero{
+    text-align:center;
+    padding:50px 20px 20px;
+}
+
+.page-title{
+    font-size:48px;
+    color:#1b4332;
+    font-weight:800;
+    margin-bottom:12px;
+}
+
+.subtitle{
+    color:#666;
+    font-size:16px;
+}
+
+/* CONTAINER */
+.myContainer{
+    width:90%;
+    margin:auto;
+    padding-bottom:50px;
+}
+
+/* SEARCH */
+.search-box{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:15px;
+    flex-wrap:wrap;
+    margin:35px 0 45px;
+}
+
+/* INPUT BOX */
+.input-box{
+    position:relative;
+}
+
+.input-box i{
+    position:absolute;
+    top:50%;
+    left:14px;
+    transform:translateY(-50%);
+    color:#777;
+}
+
+/* INPUT + SELECT */
+.search-box input,
+.search-box select{
+    width:260px;
+    padding:14px 14px 14px 42px;
+    border:none;
+    outline:none;
+    border-radius:14px;
+    background:#fff;
+    box-shadow:0 5px 15px rgba(0,0,0,0.06);
+    font-size:15px;
+    transition:0.3s;
+}
+
+.search-box input:focus,
+.search-box select:focus{
+    transform:translateY(-2px);
+    box-shadow:0 8px 20px rgba(82,183,136,0.2);
+}
+
+/* BUTTON */
+.search-box button{
+    padding:14px 24px;
+    border:none;
+    border-radius:14px;
+    background:
+    linear-gradient(135deg,#99d98c,#52b788);
+    color:#fff;
+    font-size:15px;
+    font-weight:700;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.search-box button:hover{
+    transform:translateY(-2px);
+    background:
+    linear-gradient(135deg,#52b788,#40916c);
+}
+
+/* BOOK GRID */
+.books {
+    display: grid;
+    /* Changed auto-fit to auto-fill, and 1fr to a fixed 280px max size */
+    grid-template-columns: repeat(auto-fill, minmax(250px, 280px));
+    gap: 30px;
+    justify-content: center; /* Centers your tidy, smaller cards cleanly on the screen */
+}
+
+/* CARD */
+.books-page .card{
+    background:#fff;
+    border-radius:22px;
+    overflow:hidden;
+    position:relative;
+    transition:0.35s;
+    box-shadow:
+    0 10px 25px rgba(0,0,0,0.06);
+}
+
+.books-page .card:hover{
+    transform:translateY(-8px);
+    box-shadow:
+    0 18px 40px rgba(0,0,0,0.12);
+}
+
+/* BADGE */
+.books-page .badge {
+    position:absolute;
+    top:14px;
+    left:14px;
+    background:#1b4332;
+    color:#fff;
+    padding:7px 14px;
+    border-radius:30px;
+    font-size:12px;
+    font-weight:700;
+    z-index:10;
+}
+
+/* IMAGE */
+.image-box{
+    overflow:hidden;
+}
+
+.books-page .card img {
+    width:100%;
+    height:320px;
+    object-fit:cover;
+    transition:0.4s;
+}
+
+.books-page .card:hover img {
+    transform:scale(1.05);
+}
+
+/* BODY */
+.books-page .card-body {
+    padding:20px;
+}
+
+/* TITLE */
+.books-page .card-body h3 {
+    color:#1b4332;
+    font-size:20px;
+    margin-bottom:10px;
+    font-weight:800;
+    line-height:1.4;
+}
+
+/* AUTHOR */
+.books-page .author {
+    color:#666;
+    margin-bottom:14px;
+    font-size:14px;
+}
+
+/* PRICE */
+.books-page .price {
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
+    background:#eef8f0;
+    color:#1b4332;
+    padding:9px 15px;
+    border-radius:30px;
+    font-size:14px;
+    font-weight:700;
+    margin-bottom:18px;
+}
+
+/* DESCRIPTION */
+.books-page .description {
+    color:#666;
+    font-size:14px;
+    line-height:1.7;
+    margin-bottom:0px;
+    min-height:70px;
+}
+
+/* BUTTON AREA OVERRIDE */
+/* CONTAINER FOR BUTTONS */
+.books-page .card-buttons {
+    display: flex;
+    flex-direction: column; /* Stacks the buttons vertically on different lines */
+    gap: 10px;              /* Space between the top and bottom button */
+    width: 100%;            /* Spans full width of the card body */
+    margin-top: 10px;       /* Adds space above the button block */
+}
+
+/* VIEW DETAILS BUTTON */
+.books-page .btn {
+    width: 100%;            /* Makes the button stretch across the full line */
+    text-align: center;
+    text-decoration: none;  
+    background: linear-gradient(135deg, #99d98c, #52b788);
+    color: #fff;
+    padding: 12px;
+    border-radius: 12px;
+    font-weight: 700;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.books-page .btn:hover {
+    transform: translateY(-2px);
+    background: linear-gradient(135deg, #52b788, #2d6a4f);
+}
+
+/* ADD TO CART BUTTON */
+.books-page .cart-btn {
+    width: 100%;            /* Makes the button stretch across the full line */
+    text-align: center;
+    text-decoration: none;  
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;               
+    background: #eef8f0;
+    color: #1b4332;
+    padding: 12px;          /* Matches vertical padding of .btn precisely */
+    border: 1px solid #99d98c;
+    border-radius: 12px;
+    font-weight: 700;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.books-page .cart-btn:hover {
+    background: #52b788;
+    color: #fff;
+    border-color: #52b788;
+    transform: translateY(-2px);
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+
+    .page-title{
+        font-size:34px;
+    }
+
+    .subtitle{
+        font-size:14px;
+    }
+
+    .search-box{
+        flex-direction:column;
+    }
+
+    .search-box input,
+    .search-box select{
+        width:100%;
+    }
+
+    .books{
+        grid-template-columns:1fr;
+    }
+}

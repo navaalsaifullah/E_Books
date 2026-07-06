@@ -1,0 +1,139 @@
+ body {
+     background: #f4f6f9;
+     font-family: Arial, sans-serif;
+ }
+
+ .hero {
+     background-image: url('./images/competition2.jpg');
+     background-repeat: no-repeat;
+     background-position: center;
+     background-size: cover;
+     margin-top: 50px;
+     color: #99d98c;
+     padding: 40px 0;
+     text-align: center;
+     margin-bottom: 40px;
+     height: 60vh;
+ }
+ .hero h1{
+    padding-top: 120px;
+    font-weight: 800;
+ }
+
+ .book-card {
+     border: none;
+     border-radius: 15px;
+     overflow: hidden;
+     transition: 0.3s;
+     cursor: pointer;
+     background: #fff;
+     height: 100%;
+     position: relative;
+     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+ }
+
+ .book-card:hover {
+     transform: translateY(-8px);
+     border: 2px solid #99d98c;
+     box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+ }
+
+ .card-img-top {
+     height: 260px;
+     object-fit: cover;
+ }
+
+ .badge-category {
+     position: absolute;
+     top: 10px;
+     right: 10px;
+     background: #000;
+     color: #99d98c;
+     padding: 5px 12px;
+     border-radius: 5px;
+     font-size: 12px;
+ }
+
+ .competition-zone {
+     display: none;
+ }
+
+ .card-timer-box {
+     font-size: 1.2rem;
+     font-weight: bold;
+     color: #99d98c;
+     border: 3px solid #99d98c;
+     border-radius: 10px;
+     padding: 6px;
+     display: inline-block;
+     margin-top: 10px;
+     min-width: 150px;
+ }
+
+ textarea {
+     resize: none;
+ }
+
+ .success-screen {
+     height: 100vh;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     background: #fff;
+ }
+
+ .success-text {
+     font-size: 3rem;
+     font-weight: bold;
+     color: #99d98c;
+ }
+
+
+ /* Exact Green Outline Box matching user reference screenshots */
+ .custom-timer-container {
+     display: inline-block;
+     border: 2.5px solid #99d98c;
+     border-radius: 12px;
+     padding: 6px 24px;
+     font-size: 1.2rem;
+     font-weight: 700;
+     color: #99d98c;
+     background-color: transparent;
+     letter-spacing: 0.5px;
+     margin-top: 10px;
+ }
+
+ /* Modernized grid card wrappers */
+ .book-card {
+     cursor: pointer;
+     transition: transform 0.2s ease, box-shadow 0.2s ease;
+     border-radius: 16px !important;
+     overflow: hidden;
+     border: 1px solid #e2e8f0 !important;
+     position: relative;
+ }
+
+ .book-card:hover {
+     transform: translateY(-4px);
+     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08) !important;
+ }
+
+ .book-card img {
+     border-top-left-radius: 16px;
+     border-top-right-radius: 16px;
+     height: 280px;
+     object-fit: cover;
+ }
+
+ .badge-category {
+     position: absolute;
+     top: 12px;
+     right: 12px;
+     background-color: #000000;
+     color: #99d98c;
+     padding: 4px 12px;
+     border-radius: 6px;
+     font-size: 0.75rem;
+     font-weight: bold;
+     z-index: 5;
+ }

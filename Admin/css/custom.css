@@ -1,0 +1,415 @@
+/* ============================================================
+   1. GLOBAL CLEANUP & ICON FIX
+============================================================ */
+*::selection {
+    background-color: rgba(153, 217, 140, 0.3) !important;
+    color: inherit !important;
+}
+
+*::-moz-selection {
+    background-color: rgba(153, 217, 140, 0.3) !important;
+    color: inherit !important;
+}
+
+/* Forces icon layout elements to properly space and load instead of collapsing */
+i, .fa, .bi, [class^="icon-"] {
+    user-select: none !important;
+    -webkit-user-select: none !important;
+    background: transparent !important;
+    display: inline-block !important;
+    min-width: 1.2em !important;
+    text-align: center !important;
+    font-style: normal !important;
+}
+
+body {
+    background-color: #ffffff !important;
+}
+
+.page-content {
+    background-color: #ffffff !important;
+    min-height: 100vh;
+}
+
+.edit-form{
+    background-color: #99d98c !important;
+}
+
+
+/* ============================================================
+   2. HEADER / NAVBAR (GREEN THEME)
+============================================================ */
+
+/* nav.navbar,
+.navbar {
+    background: #ffffff !important;
+    color: #99d98c !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2) !important;
+    box-shadow: none !important;
+    border-radius: 0 !important;
+} */
+
+nav.navbar *,
+.navbar * {
+    color: #ffffff !important;
+}
+
+
+/* ============================================================
+   3. FOOTER (GREEN THEME)
+============================================================ */
+
+footer.main-footer,
+.main-footer,
+footer,
+.footer__block {
+    background-color: #99d98c !important;
+    color: #ffffff !important;
+    border-top: 2px solid #ffffff;
+    border-radius: 0 !important;
+}
+
+footer.main-footer *,
+.main-footer *,
+footer *,
+footer a {
+    color: #ffffff !important;
+    text-decoration: none !important;
+}
+
+
+/* ============================================================
+   4. SIDEBAR (WHITE BODY + PURPLE ACCENTS)
+============================================================ */
+
+nav#sidebar,
+#sidebar {
+    background: #99d98c !important;
+    color: #ffffff !important;
+    border-top: 3px solid #ffffff !important;
+    border-right: none !important;
+    border-radius: 0 !important;
+}
+
+
+/* Sidebar Icons Fix */
+nav#sidebar i,
+#sidebar i,
+nav#sidebar ul li a i {
+    color: #ffffff !important;
+}
+
+/* Icons turn green only when the list item link is hovered */
+nav#sidebar ul li a:hover i {
+    color: #99d98c !important;
+}
+
+
+/* Sidebar Header */
+.sidebar-header {
+    background: #99d98c !important;
+    border-bottom: 1px solid rgba(177, 107, 209, 0.2) !important;
+    border-radius: 0 !important;
+}
+
+.sidebar-header .title h1,
+.sidebar-header .title p {
+    color: #ffffff !important;
+}
+
+
+/* Sidebar Links */
+nav#sidebar ul li a {
+    color: #ffffff !important;
+    background: #99d98c !important;
+    border-left: 4px solid transparent;
+    transition: 0.3s;
+    border-radius: 0 !important;
+}
+
+
+/* Hover Effect */
+nav#sidebar ul li a:hover {
+    background: #ffffff !important;
+    color: #99d98c !important;
+    border-left: 4px solid #99d98c !important;
+}
+
+
+/* Active Menu */
+/* nav#sidebar ul li.active > a {
+background: #ffffff !important;
+color: #99d98c !important;
+font-weight: 600 !important;
+border-left: 4px solid #99d98c !important;
+} */
+
+
+/* Dropdown Submenus */
+nav#sidebar ul ul {
+    background-color: #99d98c !important;
+    border-left: 4px solid #99d98c !important;
+    border-radius: 0 !important;
+}
+
+nav#sidebar ul ul li a {
+    background-color: #99d98c !important;
+    color: #ffffff !important;
+    border-radius: 0 !important;
+}
+
+nav#sidebar ul ul li a i {
+    color: #ffffff !important;
+}
+
+nav#sidebar ul ul li a:hover {
+    background-color: #ffffff !important;
+    color: #99d98c !important;
+}
+
+
+/* ============================================================
+   5. DASHBOARD CARDS & BLOCKS (WHITE BOX THEME)
+============================================================ */
+
+.card,
+.stats-with-chart-2,
+.statistic-block,
+.project,
+.feeds,
+.orders,
+.tasks,
+.messages-block {
+    background-color: #99d98c !important;
+    color: #ffffff !important;
+    border: 2px solid #99d98c !important;
+    border-radius: 0 !important;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08) !important;
+    margin-bottom: 20px;
+}
+
+.page-header {
+    background-color: #ffffff !important;
+    color: #99d98c !important;
+    border-bottom: 2px solid #99d98c !important;
+}
+
+nav.navbar,
+.navbar {
+    background-color: #99d98c !important;
+    color: #ffffff !important;
+    border: 2px solid #99d98c !important;
+}
+
+/* Text + Icons */
+.card *,
+.block *,
+.statistic-block *,
+.project *,
+.feeds *,
+.orders *,
+.tasks *,
+.messages-block *,
+.card i {
+    color: #ffffff !important;
+}
+
+/* .stats-with-chart-2{
+border-radius: 50%;
+} */
+
+
+.bili.active::before{
+    background: #99d98c;
+}
+
+.input-group-text{
+    background-color: #99d98c;
+    border: none;
+}
+
+/* ============================================================
+   6. TABLES (KEEP BORDER RADIUS)
+============================================================ */
+
+.table, table, .table-responsive {
+    border-radius: 12px !important;
+    overflow: hidden;
+    background: #ffffff !important; /* Forces background white */
+}
+
+.table td {
+    color: #99d98c !important;
+    border-color: rgba(177, 107, 209, 0.15) !important;
+}
+
+.table th {
+    border-color: rgba(177, 107, 209, 0.15) !important;
+    color: #ffffff !important;
+}
+
+thead {
+    background-color: #99d98c !important;
+    color: #ffffff !important;
+}
+
+.pdf-btn {
+    background-color: #99d98c !important;
+    color: #ffffff !important;
+}
+
+.table td a i {
+    color: #ffffff !important;
+}
+
+
+/* ============================================================
+   7. PROGRESS BARS
+============================================================ */
+
+.progress.progress-template {
+    background: rgba(177, 107, 209, 0.1) !important;
+    border-radius: 0 !important;
+}
+
+.progress-bar.progress-bar-template {
+    background: #99d98c !important;
+    border-radius: 0 !important;
+}
+
+
+/* ============================================================
+   8. BUTTONS
+============================================================ */
+
+.btn,
+.btn-primary,
+button {
+    border-radius: 0 !important;
+}
+
+.btn-primary,
+button,
+input[type="submit"] {
+    background-color: #99d98c !important;
+    border-color: #99d98c !important;
+    color: #ffffff !important;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    transition: 0.2s ease-in-out;
+}
+
+.btn-primary:hover,
+button:hover,
+input[type="submit"]:hover {
+    background-color: #84c778 !important;
+    border-color: #84c778 !important;
+    color: #ffffff !important;
+}
+
+
+/* ============================================================
+   9. FORMS (MATCHES GREEN/WHITE THEME)
+============================================================ */
+
+/* Fixes the dark gray text selection box shown in the images */
+form ::selection,
+div[class*="-form"] ::selection {
+    background-color: rgba(153, 217, 140, 0.3) !important; /* Soft green highlight */
+    color: inherit;
+}
+
+/* The outer green card/wrapper container */
+.form {
+    background-color: #99d98c !important;
+    padding: 20px;
+}
+
+/* The inner white card holding the input fields */
+form,
+div[class*="-form"] {
+    background-color: #ffffff !important;
+    border: 2px solid #99d98c !important;
+    color: #99d98c !important;
+    border-radius: 0 !important;
+    padding: 25px;
+}
+
+/* Form Titles / Headings */
+form h1,
+form h2,
+form h3,
+.title strong,
+div[class*="-form"] h3,
+div[class*="-form"] .card-header {
+    color: #ffffff !important; /* Made white to stand out against the green header background */
+    border-bottom: 2px solid #ffffff !important;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    background-color: transparent !important;
+}
+
+/* Field Labels */
+form label,
+.form-label {
+    color: #99d98c !important;
+    font-weight: 600 !important;
+    margin-bottom: 8px;
+    display: inline-block;
+}
+
+.form-control-label {
+    color: #99d98c !important;
+}
+
+/* Text Inputs, Select dropdowns, and Textareas */
+
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input.form-control,
+select,
+select.form-control,
+textarea,
+textarea.form-control {
+    background-color: #ffffff !important;
+    color: #99d98c !important; /* Base drop-down selection color set to theme green */
+    border: 2px solid #99d98c !important;
+    border-radius: 0 !important;
+    padding: 8px 15px !important;
+    width: 100%;
+    box-sizing: border-box;
+    transition: 0.2s ease-in-out;
+}
+
+/* Explicit style targets for dropdown list elements */
+select option {
+    color: #99d98c !important;
+    background-color: #ffffff !important;
+}
+
+/* Styles the select element text differently when the placeholder is active */
+
+
+/* Ensures that once an option is picked, it looks solid and intentional */
+select option:not([value=""]) {
+    color: #99d98c !important; /* High contrast dark text for active choices */
+}
+
+select option:not([value=""]):hover {
+    background-color: #99d98c !important; 
+    color: #ffffff;
+}
+
+/* Placeholder text color adjustment */
+input::placeholder,
+textarea::placeholder {
+    color: #b0b0b0 !important;
+    opacity: 1;
+}
+
+.block{
+    background-color: #99d98c;
+}
